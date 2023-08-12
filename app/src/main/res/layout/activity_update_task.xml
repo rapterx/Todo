@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        app:srcCompat="@drawable/baseline_add_24"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update the task"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="8sp"/>
+
+    <EditText
+        android:id="@+id/upTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32sp"
+        android:background="@drawable/edit_text_background"/>
+
+    <EditText
+        android:id="@+id/upDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:hint="Description"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/edit_text_background"/>
+
+    <EditText
+        android:id="@+id/upDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/edit_text_background"/>
+
+    <EditText
+        android:id="@+id/upTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="Time"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/edit_text_background"/>
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Task"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16sp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
